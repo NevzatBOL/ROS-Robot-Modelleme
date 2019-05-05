@@ -5,9 +5,10 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
-  <arg name="model" default="$(find models)/urdf/sekil8.xacro"/>
+  <arg name="model" default="$(find models)/urdf/sekil9.xacro"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!--arg name="world_name" value="$(find models)/world/world1.world"/-->
     <arg name="debug" value="$(arg debug)"/>
     <arg name="gui" value="$(arg gui)"/>
     <arg name="paused" value="$(arg paused)"/>
